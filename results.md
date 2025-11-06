@@ -31,4 +31,7 @@ Even for just 3 epochs, LoRA test gave similar results but with faster compute t
 
 
 ## Discussion:
-Low accuracy and high loss due to constrained hyperparameter. Model as complex as BioBERT requires more refined hyperparameters. For test run in last cell, model predicts wrong output due to low volume of data, and minimal hyperparameter provision.
+Low accuracy and high loss due to constrained hyperparameter. Model as complex as BioBERT requires more refined hyperparameters. For test run in last cell, model outputs 3 top predictions for a query alont with cited recommendation. All three of them have around 0.05 score/probability showing need for more refined training in contrast to low volume of data and minimal hyperparameter provision.
+| Query                            | Output  |
+| -------------------------------- | ------- |
+| TP53 p.R248W in breast cancer?   | Truncating variant; Radiation not advised. [OncoKB]: 0.0615 <br /> Truncating variant; Radiation not advised. [COSMIC]: 0.0537 <br /> Resistance mutation; Switch to alternative TKI. [ClinVar]: 0.0527 |
