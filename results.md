@@ -1,5 +1,4 @@
 Instructed hyperparameters
-
 | Parameter           | Value             |
 | ------------------- | ----------------- |
 | Epochs              | 3                 |
@@ -23,6 +22,11 @@ Results
 Discussion:
 Low accuracy and high loss due to constrained hyperparameter. Model as complex as BioBERT requires more refined hyperparameters. 
 Even for just 3 epochs, LoRA test gave similar results but with faster compute time as below:
-| **Evaluation Runtime (s)** | 0.1155 |
+| Metric                     | Value  |
+| -------------------------- | ------ |
+| **Epoch**                  | 3.0    |
+| **Evaluation Loss**        | 3.2504 |
+| **Evaluation Accuracy**    | 0.0909 |
+| **Evaluation Runtime (s)** | 0.1211 |
 | **Eval Samples/sec**       | 90.85  |
 | **Eval Steps/sec**         | 8.26   |
