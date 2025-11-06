@@ -1,6 +1,6 @@
 # 1.fine-tune_BioBert (Assignment 1)
 
-Here, we have used pretrained BioBERT model v1.1 from Transformers. Goal is to fine-tune it using provided genomic variants(variants.json).
+Here, we have used pretrained BioBERT model v1.1 from Transformers. Goal is to fine-tune it using provided genomic variants(variants.json). Proposed method could leverage AI capabilities to learn and understand variants and how they mutate overtime. Giving an insight, understanding cancer at gene level for better therapy implementations.
 
 ## Part 1
 1. Loaded JSON data into python (Hugging Face Dataset)
@@ -26,3 +26,9 @@ Here, we have used pretrained BioBERT model v1.1 from Transformers. Goal is to f
 1. Didnt go for T5-style generation, it would introduce hallucination given shortage of dataset
 2. NoteBook preview doesnt appears due to metadata error. Download or visit notebook @ https://colab.research.google.com/drive/1tfSbsaHb54EdOE2QorwpGppnRFlLnFyr?usp=sharing
 3. Trained model pushed to HF @ https://huggingface.co/abd-ur/results
+
+## Ethics and Bias Mitigation
+1. Data diversity, more variant types can reduce bias (provided dataset is small)
+2. Model output includes sources of recommendation to reduce hallucinations
+3. Model may overfit to dominant cancer types or may misclassify rare variants
+4. Model is of research purpose only!
