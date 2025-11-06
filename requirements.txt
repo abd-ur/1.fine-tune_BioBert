@@ -1,0 +1,9 @@
+torch
+transformers
+datasets
+peft
+evaluate
+scikit-learn
+pandas
+tqdm
+wandb
