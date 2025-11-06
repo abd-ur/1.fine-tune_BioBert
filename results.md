@@ -1,4 +1,4 @@
-Instructed hyperparameters
+## Instructed hyperparameters
 | Parameter           | Value             |
 | ------------------- | ----------------- |
 | Epochs              | 3                 |
@@ -9,18 +9,16 @@ Instructed hyperparameters
 | Evaluation Strategy | End of each epoch |
 
 
-Results
+## Results
 | Metric                     | Value  |
 | -------------------------- | ------ |
 | **Epoch**                  | 3.0    |
 | **Evaluation Loss**        | 3.2504 |
 | **Evaluation Accuracy**    | 0.0909 |
-| **Evaluation Runtime (s)** | 0.1155 |
-| **Samples per Second**     | 95.217 |
-| **Steps per Second**       | 8.656  |
+| **Evaluation Runtime (s)** | 0.1542 |
+| **Samples per Second**     | 71.217 |
+| **Steps per Second**       | 6.484  |
 
-Discussion:
-Low accuracy and high loss due to constrained hyperparameter. Model as complex as BioBERT requires more refined hyperparameters. 
 Even for just 3 epochs, LoRA test gave similar results but with faster compute time as below:
 | Metric                     | Value  |
 | -------------------------- | ------ |
@@ -28,5 +26,9 @@ Even for just 3 epochs, LoRA test gave similar results but with faster compute t
 | **Evaluation Loss**        | 3.2504 |
 | **Evaluation Accuracy**    | 0.0909 |
 | **Evaluation Runtime (s)** | 0.1211 |
-| **Eval Samples/sec**       | 90.85  |
-| **Eval Steps/sec**         | 8.26   |
+| **Eval Samples/sec**       | 60.85  |
+| **Eval Steps/sec**         | 5.466  |
+
+
+## Discussion:
+Low accuracy and high loss due to constrained hyperparameter. Model as complex as BioBERT requires more refined hyperparameters. For test run in last cell, model predicts wrong output due to low volume of data, and minimal hyperparameter provision.
