@@ -1,0 +1,28 @@
+Instructed hyperparameters
+
+| Parameter           | Value             |
+| ------------------- | ----------------- |
+| Epochs              | 3                 |
+| Batch Size          | 16                |
+| Learning Rate       | 2e-5              |
+| LoRA Rank           | 8                 |
+| Target Modules      | query, value      |
+| Evaluation Strategy | End of each epoch |
+
+
+Results
+| Metric                     | Value  |
+| -------------------------- | ------ |
+| **Epoch**                  | 3.0    |
+| **Evaluation Loss**        | 3.2504 |
+| **Evaluation Accuracy**    | 0.0909 |
+| **Evaluation Runtime (s)** | 0.1155 |
+| **Samples per Second**     | 95.217 |
+| **Steps per Second**       | 8.656  |
+
+Discussion:
+Low accuracy and high loss due to constrained hyperparameter. Model as complex as BioBERT requires more refined hyperparameters. 
+Even for just 3 epochs, LoRA test gave similar results but with faster compute time as below:
+| **Evaluation Runtime (s)** | 0.1155 |
+| **Eval Samples/sec**       | 90.85  |
+| **Eval Steps/sec**         | 8.26   |
